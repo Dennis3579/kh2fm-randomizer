@@ -10,10 +10,10 @@ export const criticalRewardLocations: RewardLocation[] = [
 		location: LocationName.CRITICAL,
 		description: "Bonus 1",
 		value: "11D18DDE",
-		reward: Rewards.REACTION_BOOST
+		reward: Rewards.REACTION_BOOST,
 		gameMode: {
 			[GameMode.GOA_MOD]: {
-				excludeType: [RewardType.BONUS_MODIFIER]
+				excludeType: [RewardType.BONUS_MODIFIER],
 			},
 		},
 	},
