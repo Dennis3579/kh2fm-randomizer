@@ -432,7 +432,7 @@ export const populate = (
 		].forEach(reward => replaceWith(reward));
 	}
 
-	if (configuration.include.modifierUpgradesRewards === Toggle.ON) {
+	if (configuration.include.modifierUpgrades === Toggle.ON) {
 		[
 			Rewards.HP_UPGRADE,
 			Rewards.HP_UPGRADE,
