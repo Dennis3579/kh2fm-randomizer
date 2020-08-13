@@ -432,6 +432,27 @@ export const populate = (
 		].forEach(reward => replaceWith(reward));
 	}
 
+	if (configuration.include.modifierUpgradesRewards === Toggle.ON) {
+		[
+			Rewards.HP_UPGRADE,
+			Rewards.HP_UPGRADE,
+			Rewards.HP_UPGRADE,
+			Rewards.HP_UPGRADE,
+			Rewards.HP_UPGRADE,
+			Rewards.HP_UPGRADE,
+			Rewards.HP_UPGRADE,
+			Rewards.HP_UPGRADE,
+			Rewards.HP_UPGRADE,
+			Rewards.HP_UPGRADE,
+			Rewards.MP_UPGRADE,
+			Rewards.MP_UPGRADE,
+			Rewards.MP_UPGRADE,
+			Rewards.DRIVE_UPGRADE,
+			Rewards.DRIVE_UPGRADE,
+			Rewards.DRIVE_UPGRADE,
+		].forEach(reward => replaceWith(reward));
+	}
+
 	if (configuration.gameMode.mode === GameMode.GOA_MOD) {
 		if (configuration.gameMode.goa.promiseCharm === Toggle.ON) {
 			replaceWith(Rewards.PROMISE_CHARM);

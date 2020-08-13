@@ -16,6 +16,7 @@ import { spellRewards } from "./spell";
 import { staffRewards } from "./staff";
 import { summonRewards } from "./summon";
 import { synthMaterialRewards } from "./synthMaterial";
+import { modifierUpgradesRewards } from  "./modifierUpgrades"
 
 export const Rewards = {
 	...keybladeRewards,
@@ -36,4 +37,5 @@ export const Rewards = {
 	...proofRewards,
 	...keyItemRewards,
 	...bonusRewards,
+	...modifierUpgradesRewards
 };

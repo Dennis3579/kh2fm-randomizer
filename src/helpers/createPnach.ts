@@ -17,6 +17,7 @@ import {
 	removeMaxGrowthAbilities,
 } from "../patches/removeGrowthAbilities";
 import { removeLevel99Abilities } from "../patches/removeLevel99Abilities";
+import { modifierUpgrades } from "../patches/modifierUpgrades"
 import { shorterDay5 } from "../patches/shorterDay5";
 import { skipDragon } from "../patches/skipDragon";
 import { startingAP } from "../patches/startingAP";
@@ -198,6 +199,10 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 
 	if (configuration.experimental.superbossRetry === Toggle.ON) {
 		patches.push(superbossRetry);
+	}
+
+	if (configuration.include.modifierUpgrades === Toggle.ON) {
+		patches.push(modifierUpgrades);
 	}
 
 	return seed.reduce((result, item) => {

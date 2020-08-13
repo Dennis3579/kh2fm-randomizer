@@ -16,6 +16,7 @@ export interface Include {
 	growthAbilities: RandomizingAction;
 	maxGrowthAbilities: Toggle;
 	synthItems: Toggle;
+	modifierUpgrades: Toggle;
 }
 
 export const defaultInclude: Include = {
@@ -34,4 +35,5 @@ export const defaultInclude: Include = {
 	growthAbilities: RandomizingAction.RANDOMIZE,
 	maxGrowthAbilities: Toggle.ON,
 	synthItems: Toggle.ON,
+	modifierUpgrades: Toggle.OFF,
 };

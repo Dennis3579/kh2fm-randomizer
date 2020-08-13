@@ -90,6 +90,11 @@ export const TabPaneInclude: React.FC = () => {
 				{...mapValue("maxGrowthAbilities")}
 			/>
 
+			<SettingSlider
+				title="Bonus Modifiers in Chests"
+				{...mapValue("modifierUpgrades")}
+			/>
+
 			<SettingSlider title="Synthesis Rewards" {...mapValue("synthItems")} />
 		</div>
 	);
